@@ -1,4 +1,4 @@
-Selenium Test for Table Search Demo using pytest
+# Selenium Test for Table Search Demo using pytest
 
 This Python script uses pytest and Selenium WebDriver to test the Table Search functionality on the Selenium Playground site. The test checks if searching for "New York" returns exactly 5 search results out of a total of 24 entries.
 Approach
@@ -36,7 +36,7 @@ If the assertions fail, pytest will show an error message with the details of th
 
 
 
-Code:
+# Code:
 import pytest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -48,7 +48,6 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 
 
-# WebDriver Setup
 @pytest.fixture(scope="module")
 def driver():
     # Initializing Chrome WebDriver
@@ -66,7 +65,7 @@ def driver():
 
 
 
-# Test case searching for new york in searchbbox
+
 def test_search_for_new_york(driver):
     # Open the page
     driver.get("https://www.lambdatest.com/selenium-playground/table-sort-search-demo")
