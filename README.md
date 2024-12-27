@@ -1,4 +1,5 @@
 Selenium Test for Table Search Demo using pytest
+
 This Python script uses pytest and Selenium WebDriver to test the Table Search functionality on the Selenium Playground site. The test checks if searching for "New York" returns exactly 5 search results out of a total of 24 entries.
 Approach
 1.	Setup the WebDriver: The pytest fixture sets up the Selenium WebDriver (using Chrome in this test case). The driver navigates to the Table Search Demo page.
